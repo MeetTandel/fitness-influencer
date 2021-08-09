@@ -1,15 +1,17 @@
 import React from 'react'
+import ReactPlayer from 'react-player'
 
-export default function VideoDetail() {
+export default function VideoDetail({title, url, description}) {
     return (
-        <div>
-             {/* card container */}
-          <div className="mt-10">
+        <div className="sm:w-2/4 w-100 sm:p-5 p-3 text-white">
+        {/* card container */}
+          <div className="border-2 border-gray-600 rounded">
                     {/* card */}
-                    <div className="m-auto w-1/3 border-l-8 rounded-lg hover:border-blue-200 hover:drop-shadow-xl border shadow p-5 mb-1">
-                        My new Card
+                    <div className="m-5 w-100 rounded-lg hover:border-blue-200 hover:drop-shadow-xl shadow mb-1">
+                    <ReactPlayer width="100%" height="300px" controls url={url} />
                     </div>
-                    <button class="bg-blue-400 rounded-full py-4 px-8 hover:bg-blue-300 text-green-100">Button</button>
+                    <div className="title mt-3 text-blue-600 text-3xl">{title}</div>
+                    <div className="description text-blue-200 text-xl my-2 mx-5">{description}</div>
                 </div>
             
         </div>

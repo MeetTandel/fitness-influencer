@@ -12,17 +12,17 @@ export default function Main() {
         })
     }, []);
     return (
-        <div className="main">
+        <div className="main sm:h-screen h-full py-px">
             <Header scroll={scroll} />
-            <div className="main-content flex w-4/6 mt-28 m-auto">
-                <div className="main-text w-3/5 mt-16">
-                    <div className="text-7xl text-left text-white leading-1 tracking-wide">
+            <div className="main-content sm:flex sm:w-4/6 w-100 mt-28 m-auto">
+                <div className="main-text sm:w-3/5 w-100 sm:mt-16 m-4">
+                    <div className="sm:text-7xl text-5xl text-left text-white leading-1 tracking-wide">
                         <h1>LOSE FAT, GET FIT</h1>
                         <h1>HAVE FUN!</h1>
                     </div>
-                    <button className="mt-20 text-2xl bg-blue-500 py-5 px-16 text-white hover:bg-blue-700 tracking-wide">GET STARTED</button>
+                    <button className="sm:mt-20 mt-10 text-2xl bg-blue-500 py-5 px-16 text-white hover:bg-blue-700 tracking-wide">GET STARTED</button>
                 </div>
-                <div className="photo w-3/5 p-10 mt-24">
+                <div className="photo sm:w-3/5 w-100 p-10 sm:mt-24 mt-12">
                     <img src={trainer} alt="trainer" />
                 </div>
             </div>
