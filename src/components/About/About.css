@@ -1,0 +1,9 @@
+.image-background{
+    background: url("https://static.wixstatic.com/media/913019_a722867205d947a9855d1f30ca16343e~mv2_d_2559_2000_s_2.jpg/v1/fill/w_639,h_839,al_c,q_85,usm_0.66_1.00_0.01/913019_a722867205d947a9855d1f30ca16343e~mv2_d_2559_2000_s_2.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about-content h1{
+    font-family: 'PT Sans Narrow', sans-serif;
+}
