@@ -3,9 +3,8 @@ import Header from "../Header/Header"
 import "./Main.css"
 import trainer from "../../images/personal_trainer.svg"
 
-export default function Main() {
+export default function Main({search}) {
     const [scroll, setScroll] = useState(false);
-    console.log(scroll)
     useEffect(() => {
         window.addEventListener("scroll", () => {
             setScroll(window.scrollY > 10)  
@@ -13,7 +12,7 @@ export default function Main() {
     }, []);
     return (
         <div className="main sm:h-screen h-full py-px">
-            <Header scroll={scroll} />
+            <Header scroll={scroll} search={search}/>
             <div className="main-content sm:flex sm:w-4/6 w-100 mt-28 m-auto">
                 <div className="main-text sm:w-3/5 w-100 sm:mt-16 m-4">
                     <div className="sm:text-7xl text-5xl text-left text-white leading-1 tracking-wide">

@@ -11,7 +11,7 @@ export default function Videos() {
 
             <div className="sm:w-4/6 w-100 m-auto p-4">
                 <div className="sm:flex sm:flex-wrap sm:w-100">
-                    {JSONdata.map((item) => {
+                    {JSONdata.map((item, index) => {
                         return (
                             <VideoDetail title={item.title} url={item.videoURL} description={item.description} />
                         )

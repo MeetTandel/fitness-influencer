@@ -4,11 +4,12 @@ import About from "./components/About/About"
 import Footer from "./components/Footer/Footer"
 import Videos from "./components/Videos/Videos"
 
+
 function App() {
   return (
     <div className="App top-0 left-0">
       <Main />
-      <About /> 
+      <About />
       <Videos />
       <Footer />
     </div>
